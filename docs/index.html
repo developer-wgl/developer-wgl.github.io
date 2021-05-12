@@ -1,61 +1,76 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html style="font-size: 16px;">
 
-{% if page.url == "/" %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="广靓, Thanks, Reach, Captivate &amp; Convert Audiences">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Home</title>
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <link rel="stylesheet" href="Home.css" media="screen">
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 3.14.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#478ac9">
+  <link rel="canonical" href="index.html">
+  <meta property="og:url" content="index.html">
+</head>
+
+<body data-home-page="Home.html" data-home-page-title="Home" class="u-body">
+  <section class="u-clearfix u-image u-section-1" id="carousel_26a0" data-image-width="1980" data-image-height="1108">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div
+              class="u-container-style u-expand-resize u-layout-cell u-right-cell u-shape-rectangle u-size-27 u-white u-layout-cell-1">
+              <div
+                class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-valign-top-xs u-container-layout-1">
+                <h1 class="u-text u-text-1">Thanks</h1>
+                <p class="u-text u-text-2">非常感谢你的到来，但是最近服务器到期了，才换到github pages上来，还没有时间翻新~<br>
+                  <br>点击以下按钮进入我的个人博客
+                </p>
+                <a href="https://blog.csdn.net/guang_liang_"
+                  class="u-active-black u-border-2 u-border-active-black u-border-black u-border-hover-black u-btn u-button-style u-hover-black u-none u-text-active-white u-text-body-color u-text-hover-white u-btn-1">learn
+                  more</a>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-33 u-layout-cell-2">
+              <div class="u-container-layout u-valign-top u-container-layout-2">
+                <h1 class="u-text u-text-3">Reach, Captivate &amp; Convert Audiences </h1>
+                <p class="u-text u-text-4">Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="images/dsddd.jpg" alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="1313"
+                  data-image-height="1080">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
+  </section>
 
-    {% for post in site.posts %}
 
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6fec">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">Copyright by 吴广靓 on 2021-05-13</p>
     </div>
-</section>
+  </footer>
+</body>
 
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+</html>
